@@ -1,0 +1,51 @@
+{% extends "layout.njk" %}
+
+{% block page %} 
+<h1>{{project.title}}</h1>
+{% endblock page%}
+
+{% block content %}
+<div class="container container-project">
+    <div class="project-image-info">
+        <div class="image">
+            <img src="{{project.image}}" alt="Imagem de {{project.image}}">
+        </div>
+        <div class="info">
+            <p>por <strong>{{project.author}}</strong></p>
+            <p>{{project.date}}</p>
+        </div>
+    </div>
+    <div class="project-description-download">
+        <h3>Descrição</h3>
+        <div class="description">
+            <p>{{project.description or "Projeto Sem Descrição"}}</p>
+        </div>
+        <div class="download">
+            <a href="#">DOWNLOAD</a>
+        </div>
+    </div>
+    <section class="comments-section">
+        <div class="recently">
+            <h2>Comentários Recentes</h2>
+            {% for comment in comments %}
+            <div class="comment-card">
+                <div class="comment-header">
+                    <p>Autor: {{comment.author}}</p>
+                    <p>{{comment.date}}</p>
+                </div>
+                <p>{{comment.message or "Sensacional!"}}</p>
+            </div>
+            {% endfor %}
+        </div>
+        
+    </section>
+    <div class="new">
+        <h4>Novo comentário</h4>
+        <textarea name="comment" placeholder="Digite aqui o que achou do projeto." class="texto"></textarea>
+        <button type="button">Enviar</button>
+    </div>
+</div>
+
+
+
+{% endblock content %}

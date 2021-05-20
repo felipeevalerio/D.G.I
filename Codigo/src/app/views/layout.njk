@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.G.I</title>
+
+    {% include "parts/links.njk" %}
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/Logo.svg" alt="Logo D.G.I">
+            </a>
+        </div>
+        <div class="page">
+            {% block page %}{% endblock page %}
+        </div>
+        <div class="menu-section">
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <nav class="actions">
+                <ul>
+                    <a href="#"><li>Cadastrar-se</li></a>
+                    <a href="/profile"><li>Entrar</li></a>
+                </ul>
+            </nav>
+        </div>
+
+    </header>    
+    
+    <main>
+    {% include "parts/nav.njk" %}
+    {% block content %} {% endblock content %} 
+
+    </main>
+
+
+    <script src="/links.js"></script>r
+</body>
+</html>

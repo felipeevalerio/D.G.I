@@ -1,0 +1,39 @@
+{% extends "layout.njk" %}
+
+{% block page %} 
+<h1>Publicações</h1>
+{% endblock page%}
+
+{% block content %}
+<div class="container container-projects">
+    <div class="buttons">
+        <div class="buttons-page">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">...</a>
+        </div>
+        <a href="#" class="button">Nova Publicação</a>
+    </div>
+    <div class="projects-show-wrapper">
+        {% for project in projects %}
+        
+        <div class="project" id="{{project.id}}">
+                <div class="project-img">
+                    <a href="/discover/{{project.id}}"><img src="{{project.image}}" alt="Imagem de {{project.title}}"></a>
+                </div>
+                <div class="project-info">
+                    <p>{{project.title}}</p>
+                    <p>{{project.author}}</p>
+                </div>
+        </div>
+
+        {% endfor %}
+    </div>
+
+</div>
+
+
+
+{% endblock content %}

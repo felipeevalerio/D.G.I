@@ -1,0 +1,25 @@
+{
+    "topics":[
+        {
+            "id": "1",
+            "title":"Erro ao baixar projeto RocketLeague.",
+            "date":"12/02/21",
+            "description":"Não consigo baixar o projeto Rocket League. Clico no botão de download e nada acontece.O erro só ocorre neste projeto",
+            "status":true
+        },
+        {
+            "id": "2",
+            "title":"Bugs no jogo Sekiro.",
+            "date":"05/03/21",
+            "description":"Está ocorrendo alguns bugs no jogo Sekiro.",
+            "status":false
+        },
+        {
+            "id": "3",
+            "title":"Erro ao publicar jogo.",
+            "date":"07/04/21",
+            "description":"Não consigo publicar o meu jogo. Já publiquei diversas vezes mas agora está dando um erro de arquivos.",
+            "status":true
+        }
+    ]
+}

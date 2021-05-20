@@ -1,0 +1,75 @@
+{% extends "layout.njk" %}
+
+{% block page %} 
+<h1>Meu Perfil</h1>
+{% endblock page%}
+
+{% block content %}
+<div class="container container-profile">
+    <div class="profile">
+        <div class="profile-first-part">
+            <div class="profile-image">
+                <img src="./assets/profile.jpg" alt="">
+            </div>
+            <div class="profile-role">
+                <button class="dev" type="button">
+                    <div class="content">
+                        <img src="./assets/dev.svg" alt="">
+                        <p>Desenvolvedor</p>
+                    </div>
+                </button>
+                <button class="dev" type="button">
+                    <div class="content">
+                        <img src="./assets/investor.svg" alt="">
+                        <p>Investidor</p>
+                    </div>
+                </button>
+                <button class="player" type="button">
+                    <div class="content">
+                        <img src="./assets/gamer.svg" alt="">
+                        <p>Gamer</p>
+                    </div>
+
+                </button>
+            </div>
+        </div>
+        <div class="profile-second-part">
+            <div class="name field">
+                <h1>Lucas Monteiro</h1>
+                <a href="#">Editar Perfil</a>
+            </div>
+            <div class="email field">
+                <p>Email</p>
+                <input type="text" name="email" value="lucasmonteiro@hotmail.com" placeholder="Digite seu Email">
+            </div>
+            <div class="about field">
+                <p>Sobre Você</p>
+                <textarea name="about" id="" placeholder="Diga um pouco sobre você">Sou desenvolvedor na área de games a 30 anos.
+                </textarea>
+            </div>
+
+        </div>
+    </div>
+    <div class="projects">
+        <h3>Últimos Projetos</h3>
+        <div class="projects-show">
+            {% for project in projects %}
+            <div class="project">
+                <div class="project-img">
+                    <a href="#">
+                        <img src="{{project.image}}" alt="">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <p><strong>{{project.title}}</strong></p>
+                    <p><strong>Data:</strong>  {{project.date}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}

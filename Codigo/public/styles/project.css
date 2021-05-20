@@ -1,0 +1,153 @@
+.container-project{
+    padding: 3.2rem 2.4rem;
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+}
+
+.project-image-info{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+
+.project-image-info .image{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    max-width: 240px;
+}
+
+.project-image-info .image img{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.project-image-info .info{
+    margin-top: 1rem;
+}
+
+.project-image-info .info p{
+    font-size: 1.2rem;
+}
+
+.info p > strong{
+    color: var(--purple);
+}
+
+.project-description-download{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description-download > h3{
+    color: var(--purple);
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.project-description-download .description{
+    display:flex;
+    margin: 2.4rem 1.8rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.project-description-download .download{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.project-description-download .download > a{
+    padding: 1.2rem 2.4rem;
+    background: var(--purple);
+    color: var(--background);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+
+/* Comments Area */
+
+.comments-section{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    margin-top: 2.4rem;
+}
+
+.comments-section .recently{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.comments-section .recently > h2{
+    align-self: center;
+    color: var(--purple);
+    margin-bottom: 1.2rem;
+}
+
+.comments-section .recently .comment-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    width: 90%;
+    align-self: center;
+    padding: .8rem 1.6rem;
+    margin-bottom: 1rem ;
+}
+
+.comments-section .recently .comment-card .comment-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .8rem;
+    font-size: 1.2rem;
+    color: var(--text);
+    font-weight: 600;
+}   
+ 
+
+.container-project .new{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.6rem;
+}
+
+.container-project .new > h4{
+    color: var(--purple);
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.container-project .new textarea{
+    height: 120px;
+    width: 90%;
+    align-self: center;
+    border: 1px solid var(--text);
+    border-radius: 4px;
+    padding: 1.2rem 2.4rem;
+}
+
+.container-project .new button{
+    align-self: flex-end;
+    margin: 1.2rem 2.4rem;
+    padding: 1.2rem 2.4rem;
+    background: var(--purple);
+    color: var(--background);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor:pointer;
+}

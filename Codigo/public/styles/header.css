@@ -1,0 +1,83 @@
+header {
+    display: grid;
+    grid-template-columns: 240px 1fr 240px;
+    gap: 24px;
+    padding: 2.2rem 14rem;
+    background: var(--purple);
+    min-height: 13vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+header .logo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header .page{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+header .page h1{
+    font-size: 3.2rem;
+    color: var(--background);
+    text-align: center;
+}
+
+.menu-section{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+}
+
+header .actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+header .actions ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .actions a{
+    color: white;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+header .actions a::after{
+    content:"";
+    width: 0%;
+    background: var(--green);
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 300ms ease;
+}
+
+header .actions a:hover::after{
+    width: 100%;
+}
+
