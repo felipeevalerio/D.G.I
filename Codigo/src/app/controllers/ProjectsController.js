@@ -11,11 +11,16 @@ module.exports = {
     async project(req,res){
         try {
             const project = projects.games.find(p => p.id === req.params.id)
-            const authors = projects.games.filter(p => {
-                if(p.author != project.author)
+            const authors = projects.games.filter((p,index) => {
+                if(p.author != project.author){
                     return p;
+                }
             })
-            const filtered = authors.slice(0,3);
+            let filtered; 
+            if(project.author != "Lucas Monteiro")
+                filtered = authors.slice(3,6);
+            else
+                filtered = authors.slice(0,3)
             return res.render("project.njk",{project,comments:filtered})
             
         } catch (err) {
