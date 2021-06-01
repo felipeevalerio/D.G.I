@@ -1,6 +1,7 @@
 {% extends "layout.njk" %}
 
 {% block page %} 
+<script src="/perfil.js"></script>
 <h1>Meu Perfil</h1>
 {% endblock page%}
 
@@ -35,17 +36,16 @@
         </div>
         <div class="profile-second-part">
             <div class="name field">
-                <h1>Lucas Monteiro</h1>
-                <a href="#">Editar Perfil</a>
+                <h1 id="nameUser">Lucas Monteiro</h1>
+                <button id="edit">Editar Perfil</button>
             </div>
             <div class="email field">
                 <p>Email</p>
-                <input type="text" name="email" value="lucasmonteiro@hotmail.com" placeholder="Digite seu Email">
+                <span id="emailInput"></span>
             </div>
             <div class="about field">
                 <p>Sobre Você</p>
-                <textarea name="about" id="" placeholder="Diga um pouco sobre você">Sou desenvolvedor na área de games a 30 anos.
-                </textarea>
+                <span id="sobreInput"></span>
             </div>
 
         </div>
