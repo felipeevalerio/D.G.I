@@ -11,7 +11,7 @@ module.exports = {
     async project(req,res){
         try {
             const project = projects.games.find(p => p.id === req.params.id)
-            const authors = projects.games.filter((p,index) => {
+            const authors = projects.games.filter(p => {
                 if(p.author != project.author){
                     return p;
                 }

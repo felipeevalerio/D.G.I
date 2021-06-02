@@ -12,6 +12,7 @@
     align-items: center;
     justify-content:center;
     text-align: center;
+    position: relative;
 }
 
 .project-image-info .image{
@@ -29,6 +30,23 @@
 
 .project-image-info .info{
     margin-top: 1rem;
+}
+
+.rate{
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    margin-bottom: 1rem;
+}
+
+.rate p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 .5rem;
+}
+
+.project-title-author{
+    margin-right: 2rem;
 }
 
 .project-image-info .info p{

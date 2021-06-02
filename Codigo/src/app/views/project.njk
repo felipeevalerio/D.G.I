@@ -7,6 +7,10 @@
 {% block content %}
 <div class="container container-project">
     <div class="project-image-info">
+        <div class="rate">
+            <img src="/assets/star.svg" alt="Avaliação">
+            <p>{{project.rating}}/5.0</p>
+        </div>
         <div class="image">
             <img src="{{project.image}}" alt="Imagem de {{project.image}}">
         </div>
@@ -14,6 +18,7 @@
             <p>por <strong>{{project.author}}</strong></p>
             <p>{{project.date}}</p>
         </div>
+
     </div>
     <div class="project-description-download">
         <h3>Descrição</h3>
