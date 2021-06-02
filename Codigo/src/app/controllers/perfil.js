@@ -1,8 +1,12 @@
 onload = () => {
     let editar = false, emin = document.getElementById('emailInput'), soin = document.getElementById('sobreInput');
     let dev = localStorage.getItem('dev'), investor = localStorage.getItem('investor'), player = localStorage.getItem('payer');
-    if (dev == true)
-        document.getElementById('dev').innerHTML = '<div class="content">< img src = "./assets/investor.svg" alt = "" ><p>Investidor</p></div >';
+    if (dev == 'true')
+        document.getElementById('dev').innerHTML = '<button class="dev" id="devbt" type="button"><div class="content"><img src="./assets/dev.svg" alt=""><p>Desenvolvedor</p></div></button>';
+    if (investor == 'true')
+        document.getElementById('investor').innerHTML = '<button class="investor" id="investorbt" type="button"><div class="content"><img src="./assets/investor.svg" alt=""><p>Investidor</p></div></button>';
+    if (player == 'true')
+        document.getElementById('player').innerHTML = '<button class="gamer" id="playerbt" type="button"><div class="content"><img src="./assets/gamer.svg" alt=""><p>Gamer</p></div></button>';
     emin.innerHTML = localStorage.getItem('email');
     soin.innerHTML = localStorage.getItem('sobre');
     document.getElementById('nameUser').innerText = localStorage.getItem('nome');
