@@ -26,5 +26,13 @@ module.exports = {
         } catch (err) {
             console.error(err)
         }
+    },
+
+    showGamesAPI(req,res){
+        return res.json({projects})
+    }   ,
+
+    updateAPI(req,res){
+
     }
 }

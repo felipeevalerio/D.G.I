@@ -53,7 +53,6 @@ if(window.innerWidth <= 754){
             let reduced = paragraphProject.textContent.slice(0,i)
             reduced += "..."
             paragraphProject.innerHTML = reduced
-            console.log(paragraphProject)
             break;
         }
     }

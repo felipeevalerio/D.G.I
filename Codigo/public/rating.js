@@ -1,11 +1,13 @@
 const buttonRate = document.querySelector(".button.button-rating");
 
+const game = document.querySelector(".modal-container .modal-content .header h3").textContent
 const modalContainer = document.querySelector(".modal-container");
 const modalContent = document.querySelector(".modal-content");
 const stars = document.querySelectorAll(".modal-content .rating-area img");
 const p = document.querySelector(".modal-content .rating-text");
 const button = document.querySelector(".modal-content .footer button");
-console.log(buttonRate)
+
+
 
 buttonRate.addEventListener("click",()=>{
     modalContainer.classList.add("on");
@@ -13,8 +15,8 @@ buttonRate.addEventListener("click",()=>{
 
 button.addEventListener("click",()=>{
     modalContainer.classList.remove("on");
-})
 
+})
 
 for(let star of stars){
     
@@ -23,7 +25,7 @@ for(let star of stars){
         let index = star.dataset.value;
         changeText(index);
 
-        for(stara of stars){
+        for(let stara of stars){
             if(stara.dataset.value <= index)
                 stara.src = "/assets/star.svg";
             else
