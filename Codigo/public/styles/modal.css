@@ -6,7 +6,12 @@
     top: 0;
     left: 0;
     z-index: 300;
+    display:none;
 }   
+
+.modal-container.on{
+    display:initial;
+}
 
 .modal-content{
     position: relative;

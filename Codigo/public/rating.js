@@ -1,5 +1,20 @@
+const buttonRate = document.querySelector(".button.button-rating");
+
+const modalContainer = document.querySelector(".modal-container");
+const modalContent = document.querySelector(".modal-content");
 const stars = document.querySelectorAll(".modal-content .rating-area img");
 const p = document.querySelector(".modal-content .rating-text");
+const button = document.querySelector(".modal-content .footer button");
+console.log(buttonRate)
+
+buttonRate.addEventListener("click",()=>{
+    modalContainer.classList.add("on");
+})
+
+button.addEventListener("click",()=>{
+    modalContainer.classList.remove("on");
+})
+
 
 for(let star of stars){
     
