@@ -1,17 +1,20 @@
-const projects = require("../data/projects.json");
+// const projects = require("../data/projects.json");
+const projects = require("../data/projects")
+
+
 
 module.exports = {
     profilePage(req,res){
-        const filtered = projects.games.slice(0,3)
+        const filtered = projects.slice(0,3)
         return res.render("profile.njk",{projects:filtered})
     },
     projectsPage(req,res){
-        return res.render("projects.njk",{projects:projects.games})
+        return res.render("projects.njk",{projects})
     },
     async project(req,res){
         try {
-            const project = projects.games.find(p => p.id === req.params.id)
-            const authors = projects.games.filter(p => {
+            const project = projects.find(p => p.id === req.params.id)
+            const authors = projects.filter(p => {
                 if(p.author != project.author){
                     return p;
                 }
@@ -33,6 +36,8 @@ module.exports = {
     }   ,
 
     updateAPI(req,res){
-
+        const game = projects.filter(gameFil => gameFil.id == req.params.id);
+        
+        return res.json({projects})
     }
 }
