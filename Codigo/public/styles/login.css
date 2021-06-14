@@ -1,0 +1,19 @@
+form{
+    margin: 0 35%;
+}
+.login, .senha{
+    margin: 50px 0;
+    font-size: 120%;
+}
+.login{
+    margin-top: 200px;
+}
+.senhaInput, .emailInput{
+    height: 20px;   
+}
+.false{
+    display: none;
+}
+.formLogin{
+    font-size: 125%;
+}

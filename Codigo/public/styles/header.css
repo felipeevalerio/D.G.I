@@ -53,7 +53,7 @@ header .actions{
 }
 
 
-header .actions ul{
+header .actions ul, header .actions ul div{
     display: flex;
     justify-content:space-between;
     align-items: center;

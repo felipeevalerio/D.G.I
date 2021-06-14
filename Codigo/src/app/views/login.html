@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.G.I</title>
+    <link rel="shortcut icon" href="../../../public/assets/gamer.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poly&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../public/styles/global.css">
+    <link rel="stylesheet" href="../../../public/styles/header.css">
+    <link rel="stylesheet" href="../../../public/styles/nav.css">
+    <link rel="stylesheet" href="../../../public/styles/home.css">
+    <link rel="stylesheet" href="../../../public/styles/profile.css">
+    <link rel="stylesheet" href="../../../public/styles/projects.css">
+    <link rel="stylesheet" href="../../../public/styles/project.css">
+    <link rel="stylesheet" href="../../../public/styles/forum.css">
+    <link rel="stylesheet" href="../../../public/styles/media.css">
+    <link rel="stylesheet" href="../../../public/styles/login.css">
+    <script src="../controllers/login.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="../../../public/assets/Logo.svg" alt="Logo D.G.I">
+            </a>
+        </div>
+        <div class="page">
+        </div>
+        <div class="menu-section">
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <nav class="actions">
+                <ul>
+                    <div id="logoff">
+                        <a href="#">
+                            <li></li>
+                        </a>
+                        <a href="/login">
+                            <li></li>
+                        </a>
+                    </div>
+                    <a href="#" id="logado">
+                        <li></li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <aside class="menu">
+            <nav>
+                <ul>
+                    <a href="/">
+                        <li>Home</li>
+                    </a>
+                    <a href="/profile">
+                        <li>Meu Perfil</li>
+                    </a>
+                    <a href="/discover">
+                        <li>Publicações</li>
+                    </a>
+                    <a href="/forum">
+                        <li>Fórum</li>
+                    </a>
+                </ul>
+            </nav>
+        </aside>
+        <form>
+            <div class="formLogin">
+                <div class="login">
+                    Email:
+                    <input type="text" autocomplete="off" class="emailInput" id="email">
+                </div>
+                <div class="senha">
+                    Senha:
+                    <input type="password" autocomplete="off" class="senhaInput" id="senha">
+                </div>
+                <button type="button" id="btLogin">ok</button>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="/links.js"></script>
+
+</html>
