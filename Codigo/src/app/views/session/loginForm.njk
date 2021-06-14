@@ -5,9 +5,26 @@
 {% endblock page%}
 
 {% block content %}
-<div class="container container-login">
-    <form action="/" method="post">
-        
+<div class="container container-register login">
+    <form action="/login" method="post">
+        <div class="header">
+            <h2>Login</h2>
+            <button type="submit" class="button">Entrar</button>
+        </div>
+        <div class="inputs">
+
+            <div class="email input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" value="{{email}}"> 
+            </div>
+            <div class="password input">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha"> 
+            </div>
+
+
+        </div>
+    
     </form>
 </div>
 

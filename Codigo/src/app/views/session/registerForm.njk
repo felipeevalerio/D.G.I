@@ -6,8 +6,11 @@
 
 {% block content %}
 <div class="container container-register">
-    <form action="/" method="post">
-        <h2>Cadastrar</h2>
+    <form action="/register" method="post">
+        <div class="header">
+            <h2>Cadastrar</h2>
+            <button type="submit" class="button">Enviar</button>
+        </div>
         <div class="inputs">
             <div class="name input">
                 <label for="name">Nome de usuário</label>
