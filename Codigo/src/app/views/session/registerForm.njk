@@ -1,0 +1,38 @@
+{% extends "layout.njk" %}
+
+{% block page %} 
+<h1>Cadastrar-se</h1>
+{% endblock page%}
+
+{% block content %}
+<div class="container container-register">
+    <form action="/" method="post">
+        <h2>Cadastrar</h2>
+        <div class="inputs">
+            <div class="name input">
+                <label for="name">Nome de usuário</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome de usuário">
+            </div>
+            <div class="email input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email"> 
+            </div>
+            <div class="password input">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha"> 
+            </div>
+            <div class="repeat-password input">
+                <label for="repeat-password">Confirmar Senha</label>
+                <input type="password" name="repeat-password" id="repeat-password" placeholder="Confirme a senha"> 
+            </div>
+            <div class="about input">
+                <label for="about">Descrição</label>
+                <textarea name="about" id="" placeholder="Diga um pouco sobre você"></textarea>
+            </div>
+
+        </div>
+    
+    </form>
+</div>
+
+{% endblock content %}
