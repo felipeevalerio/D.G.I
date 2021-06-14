@@ -1,0 +1,12 @@
+.messages{
+    position: absolute;
+    padding: 1.2rem 2.4rem;
+    height: 120px;
+    top: 5vh;
+    left: 5vw;
+}
+.messages.error{
+    background: rgb(196, 22, 22);
+    color: var(--background);
+
+}
