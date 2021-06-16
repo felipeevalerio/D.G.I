@@ -5,11 +5,13 @@ const ProjectsController = require("../app/controllers/ProjectsController");
 const ForumController = require("../app/controllers/ForumController");
 const SessionsController = require("../app/controllers/SessionController");
 
+const {loginMiddleware , isLogged} = require("../app/middlewares/session");
+
 routes.get("/",(req,res) => {
     return res.render("index.njk");
 })
 
-routes.get("/profile",ProjectsController.profilePage)
+routes.get("/profile",isLogged,ProjectsController.profilePage)
 
 routes.get("/discover",ProjectsController.projectsPage)
 routes.get("/discover/:id",ProjectsController.project)
@@ -23,7 +25,9 @@ routes.put("/discover/:id",ProjectsController.updateAPI)
 
 
 routes.get("/login",SessionsController.loginForm);
-routes.post("/login",SessionsController.login);
+routes.post("/login",loginMiddleware,SessionsController.login);
+routes.post("/logout",SessionsController.logout);
+
 
 routes.get("/register",SessionsController.registerForm)
 routes.post("/register",SessionsController.register)
