@@ -81,21 +81,3 @@ header .actions a:hover::after{
     width: 100%;
 }
 
-
-header ul form{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;
-}
-.button.exit{
-    background: var(--green);
-    width: 60%;
-    justify-self:flex-end ;
-    font-size: 1.6rem;
-}
-
-.button.exit:hover{
-    background: rgb(184, 37, 37);
-
-}

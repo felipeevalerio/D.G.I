@@ -17,6 +17,11 @@ module.exports = {
             return res.redirect("/login");
 
         next();
-    }
+    },
+    onlyVisitors(req,res,next){
+        if(req.session.user)
+            return res.redirect("/");
+        next();
+    }   
 }
 

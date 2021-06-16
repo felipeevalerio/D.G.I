@@ -5,7 +5,7 @@ const ProjectsController = require("../app/controllers/ProjectsController");
 const ForumController = require("../app/controllers/ForumController");
 const SessionsController = require("../app/controllers/SessionController");
 
-const {loginMiddleware , isLogged} = require("../app/middlewares/session");
+const {loginMiddleware , isLogged , onlyVisitors} = require("../app/middlewares/session");
 
 routes.get("/",(req,res) => {
     return res.render("index.njk");
@@ -24,13 +24,13 @@ routes.get("/games/api",ProjectsController.showGamesAPI)
 routes.put("/discover/:id",ProjectsController.updateAPI)
 
 
-routes.get("/login",SessionsController.loginForm);
-routes.post("/login",loginMiddleware,SessionsController.login);
-routes.post("/logout",SessionsController.logout);
+routes.get("/login",onlyVisitors,SessionsController.loginForm);
+routes.post("/login",onlyVisitors,loginMiddleware,SessionsController.login);
+routes.post("/logout",isLogged,SessionsController.logout);
 
 
-routes.get("/register",SessionsController.registerForm)
-routes.post("/register",SessionsController.register)
+routes.get("/register",onlyVisitors,SessionsController.registerForm)
+routes.post("/register",onlyVisitors,SessionsController.register)
 
 
 module.exports = routes;
