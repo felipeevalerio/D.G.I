@@ -1,4 +1,4 @@
-const users = require("../data/users.json");
+const users = require("../data/users.json").users;
 const projects = require("../data/projects");
 
 module.exports = {
