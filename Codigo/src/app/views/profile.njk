@@ -36,7 +36,13 @@
         <div class="profile-second-part">
             <div class="name field">
                 <h1>{{user.name}}</h1>
-                <a href="#">Editar Perfil</a>
+                <div class="buttons-field">
+                    <a href="#">Editar Perfil</a>
+                    <form action="/logout" method="post">
+                        <button type="submit" class="button exit" id="{{req.session.user}}">Sair</button>
+                    </form>
+                </div>
+
             </div>
             <div class="email field">
                 <p>Email</p>
