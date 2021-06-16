@@ -22,6 +22,7 @@ module.exports = {
                     error:"As senhas não coincidem.",
                     ...req.body
                 })
+
             const alreadyExists = users.find(user => user.email === email);
     
             if(alreadyExists)

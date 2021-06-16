@@ -1,4 +1,4 @@
-const users = require("../data/users.json");
+const users = require("../data/users.json").users;
 
 module.exports = {
     loginMiddleware(req,res,next){
