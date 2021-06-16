@@ -44,7 +44,7 @@ module.exports = {
                     console.log(err);
             })
     
-            return res.render("session/loginForm");
+            return res.redirect("/login");
         }
         catch(err){
             console.error(err);

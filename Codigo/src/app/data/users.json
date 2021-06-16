@@ -1,16 +1,3 @@
-[
-  {
-    "id": 1,
-    "name": "Japa",
-    "email": "felipeevalerio@outlook.com",
-    "password": "123",
-    "avatar": "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg"
-  },
-  {
-    "id": 2,
-    "name": "lucas",
-    "email": "Abigail46@gmail.com",
-    "password": "123",
-    "avatar": "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg"
-  }
-]
+{
+  "users":[]
+}
