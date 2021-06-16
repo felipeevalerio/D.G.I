@@ -3,7 +3,6 @@ const nunjucks = require('nunjucks');
 const session = require("./config/session");
 const methodOverride = require("method-override");
 const routes = require('./routes');
-
 const app = express();
 app.use(session);
 app.use((req,res,next) => {

@@ -1,12 +1,12 @@
-// const projects = require("../data/projects.json");
-const projects = require("../data/projects")
-
-
+const users = require("../data/users.json");
+const projects = require("../data/projects");
 
 module.exports = {
     profilePage(req,res){
+        const user = users.find(findUser => findUser.id === req.session.user);
+
         const filtered = projects.slice(0,3)
-        return res.render("profile.njk",{projects:filtered})
+        return res.render("profile.njk",{projects:filtered,user})
     },
     projectsPage(req,res){
         return res.render("projects.njk",{projects})

@@ -9,7 +9,7 @@
     <div class="profile">
         <div class="profile-first-part">
             <div class="profile-image">
-                <img src="./assets/profile.jpg" alt="">
+                <img src="{{user.avatar}}" alt="Avatar de {{user.name}}">
             </div>
             <div class="profile-role">
                 <button class="dev" type="button">
@@ -35,17 +35,16 @@
         </div>
         <div class="profile-second-part">
             <div class="name field">
-                <h1>Lucas Monteiro</h1>
+                <h1>{{user.name}}</h1>
                 <a href="#">Editar Perfil</a>
             </div>
             <div class="email field">
                 <p>Email</p>
-                <input type="text" name="email" value="lucasmonteiro@hotmail.com" placeholder="Digite seu Email">
+                <input type="text" name="email" value="{{user.email}}" placeholder="Digite seu Email">
             </div>
             <div class="about field">
                 <p>Sobre Você</p>
-                <textarea name="about" id="" placeholder="Diga um pouco sobre você">Sou desenvolvedor na área de games a 30 anos.
-                </textarea>
+                <textarea name="about" id="" placeholder="Diga um pouco sobre você"></textarea>
             </div>
 
         </div>

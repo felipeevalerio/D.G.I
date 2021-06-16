@@ -10,13 +10,12 @@ module.exports = {
         return res.render("session/registerForm");
     },
     login(req,res){
-
         return res.redirect("/");
     },
     async register(req,res){
         try{
             const { name, email, password , repeatPassword, avatar} = req.body;
-        
+            const games = [];
             const id = users.length + 1 ; 
             if(password !== repeatPassword)
                 return res.render("session/registerForm", {
@@ -36,7 +35,8 @@ module.exports = {
                 name,
                 email, 
                 password,
-                avatar
+                avatar,
+                games
             });  
     
             fs.writeFile("./src/app/data/users.json",JSON.stringify(users,null,2),(err)=>{
@@ -50,6 +50,10 @@ module.exports = {
             console.error(err);
         }        
 
+    },
+    logout(req,res){
+        req.session.destroy();
+        return res.redirect("/");
     }
 
 }

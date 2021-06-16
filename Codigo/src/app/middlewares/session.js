@@ -1,5 +1,4 @@
-const { users } = require("../data/users"); 
-
+const users = require("../data/users.json");
 
 module.exports = {
     loginMiddleware(req,res,next){
@@ -10,8 +9,14 @@ module.exports = {
                 error:"Usuário não encontrado.",
                 email
             })
-        req.session.user = user;
+        req.session.user = user.id;
         next()
+    },
+    isLogged(req,res,next){
+        if(!req.session.user)
+            return res.redirect("/login");
+
+        next();
     }
 }
 

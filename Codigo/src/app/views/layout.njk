@@ -25,8 +25,14 @@
             </div>
             <nav class="actions">
                 <ul>
+                    {% if not req.session.user %}
+                    <form action="/logout" method="post">
+                        <button type="submit" class="button exit">Sair</button>
+                    </form>
+                    {% else %}
                     <a href="/register"><li>Cadastrar-se</li></a>
                     <a href="/login"><li>Entrar</li></a>
+                    {% endif %}
                 </ul>
             </nav>
         </div>
