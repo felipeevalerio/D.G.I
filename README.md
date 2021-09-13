@@ -1,19 +1,33 @@
-# Nome do projeto
+<h1 align="center">🎮 D.G.I 🎮</h1>
+<p align="center">
+  <img src="./Codigo/public/assets/readme-gif.gif" height="240px" width="480px" alt="Bart Gif"></img>
+</p>
+<p align="center">
+  <strong>💻 A solução para os desenvolvedores idependentes 🖱️</strong><br/>
+  <a href="https://sn0ci.sse.codesandbox.io">Acesse a D.G.I</a>
+</p>
+</br>
 
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+## :notebook: Sobre o Projeto
+A D.G.I foi desenvolvida na matéria de TIAW, durante o 1° Período do curso de  Engenharia De Software na PUC-MG.
+O projeto veio com uma proposta de trazer uma maior praticidade para os desenvolvedores idependentes que geralmente possuem pouco incentivo.
 
-## Alunos integrantes da equipe
+## :pushpin: Objetivos
+O objetivo principal do trabalho é auxiliar na divulgação de jogos desenvolvidos por pequenas produtoras ou até mesmo programadores idependentes. Tal auxílio viria além da própria divulgaação do site ,através da possibilidade de feedback da comunidade, juntamente com a oportunidade de conseguir invetidores.
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+## :gear: Tecnologias Utilizadas
 
-## Professores responsáveis
+* HTML
+* CSS
+* JavaScript
+* Node.js
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+## 🐆 Metodologias Ágeis
 
-## Instruções de utilização
+* Scrum
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+## 📖 Alunos integrantes da equipe
+
+* Felipe Espíndola Valério
+* Thiago Mariano
+* Lucas de Paula Martins
