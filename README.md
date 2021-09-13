@@ -4,7 +4,7 @@
 </p>
 <p align="center">
   <strong>💻 A solução para os desenvolvedores idependentes 🖱️</strong><br/>
-  <a href="https://sn0ci.sse.codesandbox.io">Acesse a D.G.I</a>
+  <a href="https://sn0ci.sse.codesandbox.io" target="_blank">Acesse a D.G.I</a>
 </p>
 </br>
 
