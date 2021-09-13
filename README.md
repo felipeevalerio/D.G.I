@@ -31,3 +31,9 @@ O objetivo principal do trabalho é auxiliar na divulgação de jogos desenvolvi
 * Felipe Espíndola Valério
 * Thiago Mariano
 * Lucas de Paula Martins
+
+
+## 🌎 Acesso em : 
+<p align="center">
+  <a href="https://sn0ci.sse.codesandbox.io">Acessar D.G.I</a>
+</p>
